@@ -10,12 +10,16 @@
 .resume-container-light {
   background: #f9f9f9;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  --social-link-color: #333;
+  --social-link-fill: #333;
 }
 
 .resume-container-dark {
   background: #3c3c3c;
   color: #f0f0f0;
   box-shadow: 0 4px 20px rgba(0, 0, 0,  0.3);
+  --social-link-color: #f0f0f0;
+  --social-link-fill: #f0f0f0;
 }
 
 .main-info {
