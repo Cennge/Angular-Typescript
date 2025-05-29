@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { SocialLinksComponent } from '../social-links/social-links.component';
+import { CommonModule } from '@angular/common';
+import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 
 @Component({
   selector: 'app-user-info',
-  imports: [SocialLinksComponent],
+  imports: [SocialLinksComponent, CommonModule, ThemeToggleComponent],
   templateUrl: './user-info.component.html',
-  styleUrl: './user-info.component.css'
+  styleUrls: ['./user-info.component.css']
 })
 export class UserInfoComponent {
   fullName: string = 'Ilya Gliba';
@@ -15,4 +17,10 @@ export class UserInfoComponent {
   experience: string = '2 year';
   skills: string = 'programming';
   photo: string = '/ilya.png'
+
+  isDarkTheme: boolean = false;
+
+  toggleTheme(isDark: boolean) {
+    this.isDarkTheme = isDark;
+  }
 }
