@@ -1,5 +1,7 @@
 <div class="resume-container" [ngClass]="isDarkTheme ? 'resume-container-dark' : 'resume-container-light'">
-  <app-theme-toggle (themeChanged)="toggleTheme($event)"></app-theme-toggle>
+  <div>
+    <app-theme-toggle (themeChanged)="toggleTheme($event)"></app-theme-toggle>
+  </div>
   <div class="main-info">
     <div class="text-info">
       <h2>{{ fullName | uppercase }}</h2>
@@ -13,5 +15,5 @@
       <img [src]="photo" alt="photo">
     </div>
   </div>
- <app-social-links></app-social-links>
+  <app-social-links></app-social-links>
 </div>
