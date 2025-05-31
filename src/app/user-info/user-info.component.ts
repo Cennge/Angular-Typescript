@@ -11,7 +11,7 @@ import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
 })
 export class UserInfoComponent {
   fullName: string = 'Ilya Gliba';
-  phone: string = '+380 123 456 789';
+  phone: string = '+380 055 4321';
   email: string = 'ilyagliba02@gmail.com';
   city: string = 'Odessa';
   experience: string = '2 year';
@@ -19,8 +19,9 @@ export class UserInfoComponent {
   photo: string = '/ilya.png'
 
   isDarkTheme: boolean = false;
+  currentDate: Date = new Date();
 
   toggleTheme(isDark: boolean) {
     this.isDarkTheme = isDark;
-  }
+  } 
 }
