@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SocialLinksComponent } from '../social-links/social-links.component';
 import { CommonModule } from '@angular/common';
 import { ThemeToggleComponent } from '../theme-toggle/theme-toggle.component';
@@ -18,7 +18,7 @@ export class UserInfoComponent {
   skills: string = 'programming';
   photo: string = '/ilya.png'
 
-  isDarkTheme: boolean = false;
+  @Input() isDarkTheme: boolean = false;
   currentDate: Date = new Date();
 
   toggleTheme(isDark: boolean) {

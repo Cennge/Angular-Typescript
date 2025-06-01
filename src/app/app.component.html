@@ -1,1 +1,3 @@
-<app-user-info></app-user-info>
+<app-theme-toggle (themeChanged)="toggleTheme($event)"></app-theme-toggle>
+<app-user-info [isDarkTheme]="isDarkTheme"></app-user-info>
+<app-menu [isDarkTheme]="isDarkTheme"></app-menu>
