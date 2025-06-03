@@ -1,0 +1,129 @@
+#main {
+    padding: 3% 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+#text-post {
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    color: black;
+}
+
+
+#tag-fixed {
+    width: 300px;
+    height: 44px;
+    border-radius: 52px;
+    border-width: 1px;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    gap: 10px;
+    border: 1px solid #000000;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #000000;
+    margin-top: 100px;
+    align-self: center;
+    margin-bottom: 200px;
+}
+
+#info {
+    display: flex;
+}
+
+#text-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    justify-content: space-between;
+}
+
+#text-discover {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    color: #000000;
+}
+
+#text-discover2 {
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    color: #000000;
+}
+
+#buttons-container {
+    padding-top: 10px;
+    padding-right: 16px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    width: 35%;
+    height: 162px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 300px;
+}
+
+#text-connect {
+    margin-top: 140px;
+    width: 1079px;
+    height: 120px;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 60px;
+    letter-spacing: 0%;
+    vertical-align: middle;
+    color: #000000;
+}
+
+#btn-login {
+    width: 100px;
+    height: 44px;
+    top: 2485px;
+    left: 165px;
+    border-radius: 21px;
+    border-width: 1px;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #000000;
+    font-family: Rubik;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #000000;
+    background: none;
+    margin-top: 20px;
+}
