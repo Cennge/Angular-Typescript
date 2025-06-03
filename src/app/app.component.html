@@ -1,0 +1,27 @@
+<form [formGroup]="loginForm" (ngSubmit)="submit()">
+    <div>
+        <label>Email:</label>
+        <input type="email" formControlName="email">
+        <div *ngIf="loginForm.controls.email.invalid && loginForm.controls.email.touched">
+            Некорректный email
+        </div>
+    </div>
+
+    <div>
+        <label>Пароль:</label>
+        <input type="password" formControlName="password">
+        <div *ngIf="loginForm.controls.password.invalid && loginForm.controls.password.touched">
+            Минимум 6 символов
+        </div>
+    </div>
+    
+    <div>
+        <label>Как дела?</label>
+        <input type="text" formControlName="howAreYou">
+        <div *ngIf="loginForm.get('howAreYou')?.invalid && loginForm.get('howAreYou')?.touched">
+            Вводить можно только буквы!
+        </div>
+    </div>
+
+    <button type="submit" [disabled]="loginForm.invalid">Отправить</button>
+</form>
